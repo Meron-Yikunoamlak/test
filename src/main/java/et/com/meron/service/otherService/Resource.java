@@ -13,9 +13,7 @@ public class Resource {
 
 
     public static void main(String args[]){
-        try(    FileOutputStream fileOutputStream=
-                        new FileOutputStream("C:\\Users\\memo\\Desktop\\after payback\\SafariComExam\\README.md.txt")){
-            // -----------------------------Code to write data into file--------------------------------------------//
+        try(FileOutputStream fileOutputStream= new FileOutputStream("C:\\Users\\memo\\Desktop\\after payback\\SafariComExam\\README.md.txt")){
             String msg = "MY FILE";
             byte byteArray[] = msg.getBytes();  // Converting string into byte array
             fileOutputStream.write(byteArray);  // Writing  data into file

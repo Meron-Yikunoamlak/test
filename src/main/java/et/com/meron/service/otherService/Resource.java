@@ -11,15 +11,11 @@ public class Resource {
         fr.close();
     }
 
-        public static void main(String args[]){
-            try(FileOutputStream fileOutputStream =newFileOutputStream("C:\\Users\\memo\\Desktop\\after payback\\SafariComExam\\README.md.txt")){
-                String msg = "Welcome";
-
-}
-
-
-
-    public static void main(String[] args) {
-        resource("C:\\Users\\memo\\Desktop\\after payback\\SafariComExam\\README.md.txt");
+    public static void main(String args[]) {
+        try (FileOutputStream fileOutputStream = newFileOutputStream("C:\\Users\\memo\\Desktop\\after payback\\SafariComExam\\README.md.txt")) {
+            String msg = "Welcome";
+        }
     }
-}
+
+
+

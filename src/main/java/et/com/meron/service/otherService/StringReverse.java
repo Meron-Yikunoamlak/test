@@ -52,7 +52,7 @@ public class StringReverse {
 
     public static void main(String[] args) {
         System.out.println(reverse("entoto"));
-        System.out.println(reverse2("entoto"));
+        System.out.println(reverse2("hello"));
     }
 
 }

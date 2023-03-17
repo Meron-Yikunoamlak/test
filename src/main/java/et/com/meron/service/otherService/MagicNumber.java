@@ -26,6 +26,6 @@ public class MagicNumber {
 
 
     public static void main(String[] args) {
-        System.out.println(sum(162));
+        System.out.println(sum(154));
     }
 }

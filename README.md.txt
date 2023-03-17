@@ -3,7 +3,7 @@ This project demonstrates the implementation of the using Spring Boot 3.0. It in
 
 ## Features
 * All Employee model CRUD Operations
-* Each question codes and function within their classes 	respectively
+* Each question codes and function within their classes respectively
 
 ## Technologies
 * Spring Boot 3.0
@@ -24,12 +24,15 @@ To get started with this project, you will need to have the following installed 
 ## NOW this are the questions answers one by one
 Q1.d -> Remove methode is faster in linked list than in array b/c in linked list data are ordered in
         LIFO format (Last in first out format)
-Q2.e -> The d/ce between equal method and equality operator is
+
+Q1.e -> The d/ce between equal method and equality operator is
         equals() method is used for compering string values
         whereas  equality operator used for compering objects, numbers or for checking nullability of an object
+
 Q1.f -> The d/ce between method Overloading and method Overriding
         overriding -> method signature should be the same. like same return type,same parameters and same method name
         overloading -> method signature shouldn't be the same but method names should be.
+
 Q1.g -> The d/ce between Inheritance and Abstraction
         Inheritance -> is the relation b/n parent class and child class.
                         the child class can inherit some or all methods in the parent class.
@@ -37,8 +40,7 @@ Q1.g -> The d/ce between Inheritance and Abstraction
         Abstraction -> used to hide details of a method. it gives a general overview of a method.
 
 
-
-
+** The Rest answers are answered in java classes.
 
 
 
@@ -47,6 +49,7 @@ To build and run the project, follow these steps:
 
 * Clone the repository: `git clone https://github.com/Meron-Yikunoamlak/SafariComExam.git`
 * Navigate to the project directory: cd SafariComExam
+* Create SafariComExamDB Database in your local postgres machine
 * Build the project: mvn clean install
 * Run the project: mvn spring-boot:run 
 

@@ -2,53 +2,25 @@ package et.com.meron.service.otherService;
 
 public class MagicNumber {
 
-    public static int checkMagicNumber(int number) {
-
-        String noToString = String.valueOf(number);
+    public static String sum(int given) {
         int sum = 0;
-        char[] chars = noToString.toCharArray();
+        String string = String.valueOf(given);
+        char[] chars = string.toCharArray();
 
-        for (int i = 0; i < chars.length; i++) {
-            Integer no = (int) chars[i];
+        while ( chars.length != 1 )
+            for (int i = 0; i < chars.length; i++) {
+                Integer number = Integer.parseInt(String.valueOf(chars[i]));
+                System.out.println(number);
+                sum += number;
+            }
 
-            System.out.println(no);
-
-            sum += no;
-        }
-        return sum;
-
-    }
-
-
-    public static Integer reverse(int str) {
-//        char[] chars = str.toCharArray();
-//        int sum = 0;
-//        for (int i = 0; i < chars.length; i++) {
-//            Integer number = Integer.valueOf(chars[i]);
-//            System.out.println(number);
-//            sum += number;
-//        }
-//        return sum;
-
-
-
-
-
-        char[] chars = Character.toChars(str);
-        System.out.println(chars.length);
-        for (int i = 1; i <= chars.length; i++) {
-//            String ch = str.substring(i, i + 1);
-
+        if (sum == 1) return "magic number";
+        else return "not magic number";
 
         }
-            return null;
-
-
-    }
 
 
     public static void main(String[] args) {
-//        System.out.println(reverse(String.valueOf(163)));
-        System.out.println(reverse(163));
+        System.out.println(sum(163));
     }
 }

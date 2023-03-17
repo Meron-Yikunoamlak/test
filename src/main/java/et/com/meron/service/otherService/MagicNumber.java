@@ -7,20 +7,25 @@ public class MagicNumber {
         String string = String.valueOf(given);
         char[] chars = string.toCharArray();
 
-        while ( chars.length != 1 )
+        while (chars.length != 1 && chars[0]!=1) {
             for (int i = 0; i < chars.length; i++) {
                 Integer number = Integer.parseInt(String.valueOf(chars[i]));
                 System.out.println(number);
                 sum += number;
             }
-
-        if (sum == 1) return "magic number";
-        else return "not magic number";
-
+            System.out.println("sum -> " + sum);
+            string = String.valueOf(sum);
+            chars = string.toCharArray();
         }
+        if (sum == 1) {
+            return "magic number";
+        } else {
+            return "not magic number";
+        }
+}
 
 
     public static void main(String[] args) {
-        System.out.println(sum(163));
+        System.out.println(sum(162));
     }
 }
